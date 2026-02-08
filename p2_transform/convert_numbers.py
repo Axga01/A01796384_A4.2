@@ -6,10 +6,10 @@ Reads a text file with one integer per line and converts each valid integer
 to binary and hexadecimal using basic algorithms (no bin/hex/format).
 
 Requirements covered:
-- CLI invocation: python convertNumbers.py fileWithData.txt
+- CLI invocation: python convert_numbers.py fileWithData.txt
 - Converts to binary and hexadecimal (basic algorithm, no helper functions)
 - Handles invalid data: prints warning and continues
-- Prints results to screen and saves them to ConvertionResults.txt
+- Prints results to screen and saves them to convertion_results.txt
 - Includes elapsed time on screen and in results file
 - PEP 8 compliant (note: filename required by assignment)
 """
@@ -25,7 +25,7 @@ from typing import List, Tuple
 
 
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
-RESULTS_PATH = os.path.join(SCRIPT_DIR, "tests", "ConvertionResults.txt")
+RESULTS_PATH = os.path.join(SCRIPT_DIR, "tests", "convertion_results.txt")
 DIGITS = "0123456789ABCDEF"
 
 
