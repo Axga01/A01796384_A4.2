@@ -49,6 +49,11 @@ Instala pylint:
 ```bash
 pip install pylint
 ```
+
+Instalar librería para Excel
+```bash
+pip install openpyxl
+```
 ---
 
 ## Programa 1 — Compute statistics (p1_stats)
