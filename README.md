@@ -13,17 +13,17 @@ A01796384_A4.2/
 │ ├── compute_statistics.py
 │ └── tests/
 │ ├── TC1.txt ... TC7.txt
-│ └── statistics_results.txt
+│ └── statistics_results.xls
 ├── p2_transform/
 │ ├── convert_numbers.py
 │ └── tests/
 │ ├── TC1.txt ... TC4.txt
-│ └── convertion_results.txt
+│ └── convertion_results.xls
 ├── p3_wordcount/
 │ ├── word_count.py
 │ └── tests/
 │ ├── TC1.txt ... (según archivos de apoyo)
-│ └── word_count_results.txt
+│ └── word_count_results.xls
 └── README.md
 ```
 
@@ -31,7 +31,7 @@ A01796384_A4.2/
 
 ---
 
-## Requisitos generales (según instrucciones)
+## Requisitos generales
 
 1. Implementar los 3 programas en Python.
 2. Seguir el estándar **PEP 8**.
@@ -52,43 +52,148 @@ pip install pylint
 ---
 
 ## Programa 1 — Compute statistics (p1_stats)
-Qué hace
 
+### Qué hace
 Lee un archivo con números (uno por línea) y calcula:
 
-1. n, mean, median, mode, std dev (muestral), variance (muestral), min, max
-2. Maneja líneas inválidas: muestra Warning y continúa
-3. Muestra resultados en consola y los guarda en:
-```bash
-p1_stats/tests/statistics_results.txt
-```
-4. Incluye tiempo transcurrido
+- n
+- mean
+- median
+- mode
+- std dev (muestral)
+- variance (muestral)
+- min
+- max
 
-## Ejecutar un caso
+### Condiciones
+- Maneja líneas inválidas: muestra *Warning* y continúa
+- Muestra resultados en consola y los guarda en:
 
-Desde la raíz del repo:
+  `p1_stats/tests/statistics_results.xls`
+
+- Incluye tiempo transcurrido
+
+### Ejecutar un caso
+
+**Desde la raíz del repositorio:**
 ```bash
 python p1_stats/compute_statistics.py p1_stats/tests/TC1.txt
 ```
-O entrando a la carpeta:
+
+**O dentro de la carpeta:**
 ```bash
 cd p1_stats
 python compute_statistics.py tests/TC1.txt
-```
-## Ejecutar todos los casos (TC1-TC7)
-```bash
-python p1_stats/compute_statistics.py p1_stats/tests/TC1.txt
-python p1_stats/compute_statistics.py p1_stats/tests/TC2.txt
-python p1_stats/compute_statistics.py p1_stats/tests/TC3.txt
-python p1_stats/compute_statistics.py p1_stats/tests/TC4.txt
-python p1_stats/compute_statistics.py p1_stats/tests/TC5.txt
-python p1_stats/compute_statistics.py p1_stats/tests/TC6.txt
-python p1_stats/compute_statistics.py p1_stats/tests/TC7.txt
+python compute_statistics.py tests/TC2.txt
+python compute_statistics.py tests/TC3.txt
+python compute_statistics.py tests/TC4.txt
+python compute_statistics.py tests/TC5.txt
+python compute_statistics.py tests/TC6.txt
+python compute_statistics.py tests/TC7.txt
 ```
 
-Evidencia: revisar/entregar p1_stats/tests/statistics_results.txt.
+### Evidencia
+Revisar o entregar el archivo:
 
-## Pylint PEP8
+`p1_stats/tests/statistics_results.xls`
+
+### pylint (PEP 8)
 ```bash
 pylint p1_stats/compute_statistics.py
 ```
+
+---
+
+## Programa 2 — Converter (p2_transform)
+
+### Qué hace
+Lee un archivo con enteros (uno por línea) y convierte cada número a:
+
+- Binario
+- Hexadecimal
+
+### Condiciones
+- Implementación con algoritmo básico (sin `bin()`, `hex()` o `format()`)
+- Maneja líneas inválidas con *Warning* y continúa
+- Muestra resultados en consola y guarda en:
+
+  `p2_transform/tests/convertion_results.xls`
+
+- Incluye tiempo transcurrido
+
+### Ejecutar un caso
+
+**Desde la raíz del repositorio:**
+```bash
+python p2_transform/convert_numbers.py p2_transform/tests/TC1.txt
+python p2_transform/convert_numbers.py p2_transform/tests/TC2.txt
+python p2_transform/convert_numbers.py p2_transform/tests/TC3.txt
+python p2_transform/convert_numbers.py p2_transform/tests/TC4.txt
+```
+
+**O dentro de la carpeta:**
+```bash
+cd p2_transform
+python convert_numbers.py tests/TC1.txt
+python convert_numbers.py tests/TC2.txt
+python convert_numbers.py tests/TC3.txt
+python convert_numbers.py tests/TC4.txt
+```
+
+### Evidencia
+Revisar o entregar el archivo:
+
+`p2_transform/tests/convertion_results.xls`
+
+### pylint (PEP 8)
+Importante: para obtener rating, corre pylint sobre el archivo, no sobre el folder como “módulo”.
+
+```bash
+pylint p2_transform/convert_numbers.py
+```
+
+---
+
+## Programa 3 — Count Words (p3_wordcount)
+
+### Qué hace
+Lee un archivo de texto y cuenta:
+
+- Todas las palabras distintas y su frecuencia
+
+### Condiciones
+- Algoritmo básico (sin librerías de conteo)
+- Maneja líneas vacías o inválidas con *Warning* y continúa
+- Imprime resultados y guarda evidencia en:
+
+  `p3_wordcount/tests/word_count_results.xls`
+
+- Incluye tiempo transcurrido
+
+### Ejecutar un caso
+
+**Desde la raíz del repositorio:**
+```bash
+python p3_wordcount/word_count.py p3_wordcount/tests/TC1.txt
+```
+
+**O dentro de la carpeta:**
+```bash
+cd p3_wordcount
+python word_count.py tests/TC1.txt
+python word_count.py tests/TC2.txt
+python word_count.py tests/TC3.txt
+python word_count.py tests/TC4.txt
+python word_count.py tests/TC5.txt
+```
+
+### Evidencia
+Revisar o entregar el archivo:
+
+`p3_wordcount/tests/word_count_results.xls`
+
+### pylint (PEP 8)
+```bash
+pylint p3_wordcount/word_count.py
+```
+
