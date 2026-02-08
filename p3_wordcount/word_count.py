@@ -5,10 +5,10 @@ P3 - Word Count.
 Reads a text file and counts the frequency of each distinct word.
 
 Requirements covered:
-- Command line execution: python wordCount.py file.txt
+- Command line execution: python word_count.py file.txt
 - Uses basic algorithms (no counting libraries)
 - Handles invalid lines and continues execution
-- Prints results to screen and saves to WordCountResults.txt
+- Prints results to screen and saves to word_count_results.txt
 - Includes elapsed execution time
 - PEP 8 compliant
 """
@@ -22,7 +22,7 @@ from typing import Dict
 
 
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
-RESULTS_FILENAME = os.path.join(SCRIPT_DIR, "tests", "WordCountResults.txt")
+RESULTS_FILENAME = os.path.join(SCRIPT_DIR, "tests", "word_count_results.txt")
 
 
 def normalize_word(word: str) -> str:
