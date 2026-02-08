@@ -18,11 +18,10 @@ def read_numbers(path: str) -> List[float]:
     with open(path, "r", encoding="utf-8") as f:
         for line in f:
             s = line.strip()
-            if not s:
-                continue
-            numbers.append(float(s))
-    if not numbers:
-        raise ValueError("El archivo no contiene números.")
+            try:
+                numbers.append(float(s))
+            except ValueError:
+                continue  # ignora líneas que no son números
     return numbers
 
 
@@ -40,7 +39,6 @@ def median(values: List[float]) -> float:
 
 
 def mode(values: List[float]) -> float:
-    # Si hay empate, devolvemos el menor (criterio determinista).
     counts = Counter(values)
     max_freq = max(counts.values())
     modes = [v for v, c in counts.items() if c == max_freq]
@@ -60,11 +58,16 @@ def sample_std(values: List[float]) -> float:
 
 
 def fmt(x: float) -> str:
-    # Para que coincida con salidas tipo “4.81818182”
-    # (evita notación científica y limita a 8 decimales cuando aplique).
     if float(x).is_integer():
         return str(int(x))
     return f"{x:.8f}".rstrip("0").rstrip(".")
+
+
+def save_results(output_path: str, title: str, results: str) -> None:
+    with open(output_path, "a", encoding="utf-8") as f:
+        f.write(f"\n===== {title} =====\n")
+        f.write(results)
+        f.write("\n")
 
 
 def main() -> None:
@@ -83,16 +86,26 @@ def main() -> None:
     mn = min(values)
     mx = max(values)
 
-    print(f"n: {n}")
-    print(f"Mean: {fmt(mu)}")
-    print(f"Median: {fmt(med)}")
-    print(f"Mode: {fmt(mod)}")
-    print(f"Std dev: {fmt(std)}")
-    print(f"Variance: {fmt(var)}")
-    print(f"Min: {fmt(mn)}")
-    print(f"Max: {fmt(mx)}")
+    output = f"""n: {n}
+Mean: {fmt(mu)}
+Median: {fmt(med)}
+Mode: {fmt(mod)}
+Std dev: {fmt(std)}
+Variance: {fmt(var)}
+Min: {fmt(mn)}
+Max: {fmt(mx)}
+"""
+
+    print(output)
+
+    test_name = args.input_path.split("/")[-1].replace(".txt", "")
+
+    save_results(
+        "p1_stats/tests/A4.2.P1.Results.txt",
+        test_name,
+        output
+    )
 
 
 if __name__ == "__main__":
     main()
-
