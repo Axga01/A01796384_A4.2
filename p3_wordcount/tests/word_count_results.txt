@@ -101,7 +101,7 @@ vagina: 1
 wan: 1
 webcast: 1
 worse: 1
-Elapsed time (s): 0.00024497
+Elapsed time (s): 0.00016295
 
 ===== RUN =====
 Input file: TC2.txt
@@ -250,7 +250,7 @@ way: 1
 weight: 1
 win: 1
 wood: 3
-Elapsed time (s): 0.00030027
+Elapsed time (s): 0.00023866
 
 ===== RUN =====
 Input file: TC3.txt
@@ -742,7 +742,7 @@ ya: 1
 you: 1
 z: 1
 zdnet: 1
-Elapsed time (s): 0.00313309
+Elapsed time (s): 0.00058874
 
 ===== RUN =====
 Input file: TC4.txt
@@ -1696,7 +1696,7 @@ z: 1
 za: 2
 zen: 1
 zimbabwe: 2
-Elapsed time (s): 0.00201655
+Elapsed time (s): 0.00111978
 
 ===== RUN =====
 Input file: TC5.txt
@@ -5451,4 +5451,4 @@ zambia: 1
 zdnet: 2
 zealand: 1
 zen: 1
-Elapsed time (s): 0.00546444
+Elapsed time (s): 0.01021556
