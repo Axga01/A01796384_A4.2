@@ -5,11 +5,11 @@ n: 399
 Mean: 241.9122807
 Median: 239
 Mode: 170
-Std dev: 145.39355645
-Variance: 21139.28625584
+Std dev(population): 145.2112447
+Variance(population): 21086.30558853
 Min: 1
 Max: 500
-Elapsed time (s): 0.00046181
+Elapsed time (s): 0.00018699
 
 ===== RUN =====
 Input file: TC2.txt
@@ -17,11 +17,11 @@ n: 1977
 Mean: 250.78401619
 Median: 247
 Mode: 230
-Std dev: 144.20779467
-Variance: 20795.88804398
+Std dev(population): 144.17131869
+Variance(population): 20785.36913248
 Min: 0
 Max: 500
-Elapsed time (s): 0.00127592
+Elapsed time (s): 0.00087929
 
 ===== RUN =====
 Input file: TC3.txt
@@ -29,11 +29,11 @@ n: 12624
 Mean: 249.7762199
 Median: 249
 Mode: 94
-Std dev: 145.32360577
-Variance: 21118.95039382
+Std dev(population): 145.31784981
+Variance(population): 21117.27747316
 Min: 0
 Max: 500
-Elapsed time (s): 0.01124134
+Elapsed time (s): 0.00736071
 
 ===== RUN =====
 Input file: TC4.txt
@@ -41,11 +41,11 @@ n: 12624
 Mean: 149.00267348
 Median: 147.75
 Mode: 123.75
-Std dev: 130.41958526
-Variance: 17009.26821851
+Std dev(population): 130.41441961
+Variance(population): 17007.92084302
 Min: -75
 Max: 375
-Elapsed time (s): 0.00861768
+Elapsed time (s): 0.00761948
 
 ===== RUN =====
 Input file: TC5.txt
@@ -53,11 +53,11 @@ n: 307
 Mean: 241.49511401
 Median: 241
 Mode: 11
-Std dev: 145.70234165
-Variance: 21229.17236167
+Std dev(population): 145.46484786
+Variance(population): 21160.0219631
 Min: 1
 Max: 500
-Elapsed time (s): 0.00042768
+Elapsed time (s): 0.00023574
 
 ===== RUN =====
 Input file: TC6.txt
@@ -65,11 +65,11 @@ n: 3000
 Mean: 187906599279774433280
 Median: 188008049965542998016
 Mode: 38432222947123904
-Std dev: 107399951657667559424
-Variance: 11534749616069328568355401834306027388928
+Std dev(population): 107382050173809967104
+Variance(population): 11530904699530639609399804093183914147840
 Min: 38432222947123904
 Max: 374846462174394974208
-Elapsed time (s): 0.00382348
+Elapsed time (s): 0.00087848
 
 ===== RUN =====
 Input file: TC7.txt
@@ -77,92 +77,8 @@ n: 12767
 Mean: 247467395499716247552
 Median: 246640973074290016256
 Mode: 9596336322581500
-Std dev: 144611310601232990208
-Variance: 20912431153806282421791217110814294016000
+Std dev(population): 144605647009846902784
+Variance(population): 20910793147136445076788314656561722032128
 Min: 9596336322581500
 Max: 499994082497150976000
-Elapsed time (s): 0.0146574
-
-===== RUN =====
-Input file: TC1.txt
-n: 399
-Mean: 241.9122807
-Median: 239
-Mode: 170
-Std dev: 145.39355645
-Variance: 21139.28625584
-Min: 1
-Max: 500
-Elapsed time (s): 0.00017131
-
-===== RUN =====
-Input file: TC2.txt
-n: 1977
-Mean: 250.78401619
-Median: 247
-Mode: 230
-Std dev: 144.20779467
-Variance: 20795.88804398
-Min: 0
-Max: 500
-Elapsed time (s): 0.000499
-
-===== RUN =====
-Input file: TC3.txt
-n: 12624
-Mean: 249.7762199
-Median: 249
-Mode: 94
-Std dev: 145.32360577
-Variance: 21118.95039382
-Min: 0
-Max: 500
-Elapsed time (s): 0.00277114
-
-===== RUN =====
-Input file: TC4.txt
-n: 12624
-Mean: 149.00267348
-Median: 147.75
-Mode: 123.75
-Std dev: 130.41958526
-Variance: 17009.26821851
-Min: -75
-Max: 375
-Elapsed time (s): 0.01196704
-
-===== RUN =====
-Input file: TC5.txt
-n: 307
-Mean: 241.49511401
-Median: 241
-Mode: 11
-Std dev: 145.70234165
-Variance: 21229.17236167
-Min: 1
-Max: 500
-Elapsed time (s): 0.00049866
-
-===== RUN =====
-Input file: TC6.txt
-n: 3000
-Mean: 187906599279774433280
-Median: 188008049965542998016
-Mode: 38432222947123904
-Std dev: 107399951657667559424
-Variance: 11534749616069328568355401834306027388928
-Min: 38432222947123904
-Max: 374846462174394974208
-Elapsed time (s): 0.00085247
-
-===== RUN =====
-Input file: TC7.txt
-n: 12767
-Mean: 247467395499716247552
-Median: 246640973074290016256
-Mode: 9596336322581500
-Std dev: 144611310601232990208
-Variance: 20912431153806282421791217110814294016000
-Min: 9596336322581500
-Max: 499994082497150976000
-Elapsed time (s): 0.00541901
+Elapsed time (s): 0.00360932
