@@ -13,17 +13,17 @@ A01796384_A4.2/
 │ ├── compute_statistics.py
 │ └── tests/
 │ ├── TC1.txt ... TC7.txt
-│ └── statistics_results.xls
+│ └── statistics_results.txt
 ├── p2_transform/
 │ ├── convert_numbers.py
 │ └── tests/
 │ ├── TC1.txt ... TC4.txt
-│ └── convertion_results.xls
+│ └── convertion_results.txt
 ├── p3_wordcount/
 │ ├── word_count.py
 │ └── tests/
 │ ├── TC1.txt ... (según archivos de apoyo)
-│ └── word_count_results.xls
+│ └── word_count_results.txt
 └── README.md
 ```
 
@@ -69,7 +69,7 @@ Lee un archivo con números (uno por línea) y calcula:
 - Maneja líneas inválidas: muestra *Warning* y continúa
 - Muestra resultados en consola y los guarda en:
 
-  `p1_stats/tests/statistics_results.xls`
+  `p1_stats/tests/statistics_results.txt`
 
 - Incluye tiempo transcurrido
 
@@ -95,7 +95,7 @@ python compute_statistics.py tests/TC7.txt
 ### Evidencia
 Revisar o entregar el archivo:
 
-`p1_stats/tests/statistics_results.xls`
+`p1_stats/tests/statistics_results.txt`
 
 ### pylint (PEP 8)
 ```bash
@@ -117,7 +117,7 @@ Lee un archivo con enteros (uno por línea) y convierte cada número a:
 - Maneja líneas inválidas con *Warning* y continúa
 - Muestra resultados en consola y guarda en:
 
-  `p2_transform/tests/convertion_results.xls`
+  `p2_transform/tests/convertion_results.txt`
 
 - Incluye tiempo transcurrido
 
@@ -143,7 +143,7 @@ python convert_numbers.py tests/TC4.txt
 ### Evidencia
 Revisar o entregar el archivo:
 
-`p2_transform/tests/convertion_results.xls`
+`p2_transform/tests/convertion_results.txt`
 
 ### pylint (PEP 8)
 Importante: para obtener rating, corre pylint sobre el archivo, no sobre el folder como “módulo”.
@@ -166,7 +166,7 @@ Lee un archivo de texto y cuenta:
 - Maneja líneas vacías o inválidas con *Warning* y continúa
 - Imprime resultados y guarda evidencia en:
 
-  `p3_wordcount/tests/word_count_results.xls`
+  `p3_wordcount/tests/word_count_results.txt`
 
 - Incluye tiempo transcurrido
 
@@ -190,7 +190,7 @@ python word_count.py tests/TC5.txt
 ### Evidencia
 Revisar o entregar el archivo:
 
-`p3_wordcount/tests/word_count_results.xls`
+`p3_wordcount/tests/word_count_results.txt`
 
 ### pylint (PEP 8)
 ```bash
