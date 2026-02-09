@@ -98,10 +98,10 @@ def mode(values: List[float]) -> float:
     return min(best_values)
 
 
-def sample_variance(values: List[float]) -> float:
-    """Compute sample variance (n-1). Returns 0.0 if n < 2."""
+def population_variance(values: List[float]) -> float:
+    """Compute population variance (n). Returns 0.0 if n == 0."""
     n = len(values)
-    if n < 2:
+    if n == 0:
         return 0.0
 
     mu = mean(values)
@@ -109,13 +109,14 @@ def sample_variance(values: List[float]) -> float:
     for x in values:
         total += (x - mu) ** 2
 
-    return total / (n - 1)
+    return total / n
 
 
-def sample_std(values: List[float]) -> float:
-    """Compute sample standard deviation (sqrt of sample variance)."""
-    var = sample_variance(values)
+def population_std(values: List[float]) -> float:
+    """Compute population standard deviation (sqrt of population variance)."""
+    var = population_variance(values)
     return var ** 0.5
+
 
 
 def compute_stats(values: List[float]) -> StatsTuple:
@@ -124,8 +125,8 @@ def compute_stats(values: List[float]) -> StatsTuple:
     mu = mean(values)
     med = median(values)
     mod = mode(values)
-    std = sample_std(values)
-    var = sample_variance(values)
+    std = population_std(values)
+    var = population_variance(values)
     mn = min(values)
     mx = max(values)
     return n, mu, med, mod, std, var, mn, mx
@@ -142,8 +143,8 @@ def build_output(input_path: str, stats: StatsTuple, elapsed_seconds: float) -> 
         f"Mean: {fmt(mu)}\n"
         f"Median: {fmt(med)}\n"
         f"Mode: {fmt(mod)}\n"
-        f"Std dev: {fmt(std)}\n"
-        f"Variance: {fmt(var)}\n"
+        f"Std dev(population): {fmt(std)}\n"
+        f"Variance(population): {fmt(var)}\n"
         f"Min: {fmt(mn)}\n"
         f"Max: {fmt(mx)}\n"
         f"Elapsed time (s): {fmt(elapsed_seconds)}\n"
