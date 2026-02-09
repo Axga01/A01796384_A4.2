@@ -22,7 +22,7 @@ A01796384_A4.2/
 ├── p3_wordcount/
 │ ├── word_count.py
 │ └── tests/
-│ ├── TC1.txt ... (según archivos de apoyo)
+│ ├── TC1.txt ... TC5.txt
 │ └── word_count_results.txt
 └── README.md
 ```
@@ -92,7 +92,7 @@ python compute_statistics.py tests/TC6.txt
 python compute_statistics.py tests/TC7.txt
 ```
 
-### Evidencia
+## Evidencia
 Revisar o entregar el archivo:
 
 `p1_stats/tests/statistics_results.txt`
@@ -102,6 +102,8 @@ Revisar o entregar el archivo:
 cd /workspaces/A01796384_A4.2
 pylint p1_stats/compute_statistics.py
 ```
+<img width="1226" height="812" alt="image" src="https://github.com/user-attachments/assets/253434ea-b8e0-40e2-acab-c1bc1cbb66ac" />
+<img width="799" height="135" alt="image" src="https://github.com/user-attachments/assets/d7c6980a-86b0-474e-b4ed-614695fac73f" />
 
 ---
 
@@ -141,7 +143,7 @@ python convert_numbers.py tests/TC3.txt
 python convert_numbers.py tests/TC4.txt
 ```
 
-### Evidencia
+## Evidencia
 Revisar o entregar el archivo:
 
 `p2_transform/tests/convertion_results.txt`
@@ -153,6 +155,8 @@ Importante: para obtener rating, corre pylint sobre el archivo, no sobre el fold
 cd /workspaces/A01796384_A4.2
 pylint p2_transform/convert_numbers.py
 ```
+<img width="1146" height="801" alt="image" src="https://github.com/user-attachments/assets/d224f6d4-0cdb-4df4-94dd-eea8f3c15cc7" />
+<img width="844" height="135" alt="image" src="https://github.com/user-attachments/assets/d3e7eee6-817e-47a2-8d72-b0e0df96bf88" />
 
 ---
 
@@ -189,7 +193,7 @@ python word_count.py tests/TC4.txt
 python word_count.py tests/TC5.txt
 ```
 
-### Evidencia
+## Evidencia
 Revisar o entregar el archivo:
 
 `p3_wordcount/tests/word_count_results.txt`
@@ -199,4 +203,6 @@ Revisar o entregar el archivo:
 cd /workspaces/A01796384_A4.2
 pylint p3_wordcount/word_count.py
 ```
+<img width="1017" height="843" alt="image" src="https://github.com/user-attachments/assets/d0912a17-bb50-4efe-a0e2-4299bb3e122c" />
+<img width="860" height="113" alt="image" src="https://github.com/user-attachments/assets/4c51c0f6-143f-4305-ad5a-4d270c68e9bb" />
 
