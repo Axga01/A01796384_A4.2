@@ -60,8 +60,8 @@ Lee un archivo con números (uno por línea) y calcula:
 - mean
 - median
 - mode
-- std dev (muestral)
-- variance (muestral)
+- std dev (poblacional)
+- variance (poblacional)
 - min
 - max
 
@@ -99,6 +99,7 @@ Revisar o entregar el archivo:
 
 ### pylint (PEP 8)
 ```bash
+cd /workspaces/A01796384_A4.2
 pylint p1_stats/compute_statistics.py
 ```
 
@@ -149,6 +150,7 @@ Revisar o entregar el archivo:
 Importante: para obtener rating, corre pylint sobre el archivo, no sobre el folder como “módulo”.
 
 ```bash
+cd /workspaces/A01796384_A4.2
 pylint p2_transform/convert_numbers.py
 ```
 
@@ -194,6 +196,7 @@ Revisar o entregar el archivo:
 
 ### pylint (PEP 8)
 ```bash
+cd /workspaces/A01796384_A4.2
 pylint p3_wordcount/word_count.py
 ```
 
